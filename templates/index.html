@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conference Tracker</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div
+      style="
+        background-color: #ffe6e6;
+        color: #d63031;
+        padding: 8px;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: bold;
+        border-bottom: 1px solid #ffcccc;
+        margin-bottom: 20px;
+      "
+    >
+      <i class="fas fa-exclamation-triangle"></i> Disclaimer: Deadlines may be
+      inaccurate. Please double-check with the official website.
+    </div>
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+      "
+    >
+      <div style="display: flex; align-items: center; gap: 15px">
+        <h2 style="margin: 0">
+          <i class="fas fa-calendar-alt"></i> Research Deadlines
+        </h2>
+
+        <a
+          href="https://github.com/KwangryeolPark/conference-deadlines"
+          target="_blank"
+          title="View on GitHub"
+          style="
+            color: #333;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: 0.2s;
+          "
+          onmouseover="this.style.color='#6e5494'"
+          onmouseout="this.style.color='#333'"
+        >
+          <i class="fab fa-github"></i> GitHub Project Repository
+        </a>
+      </div>
+
+      <button
+        onclick="refreshData()"
+        style="
+          padding: 8px 16px;
+          background: var(--primary);
+          color: #fff;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          font-weight: bold;
+        "
+      >
+        <i class="fas fa-sync"></i> Update
+      </button>
+    </div>
+
+    <div id="loading" style="text-align: center; padding: 40px; color: #888">
+      Data Loading...
+    </div>
+
+    <div id="main-content" style="display: none">
+      <h4 style="color: #e74c3c">
+        <i class="fas fa-fire"></i> Urgent (Within 1 Month)
+      </h4>
+      <div class="scroll-row" id="row-urgent"></div>
+
+      <h4 style="color: #f39c12">
+        <i class="fas fa-clock"></i> Upcoming (Within 3 Months)
+      </h4>
+      <div class="scroll-row" id="row-upcoming"></div>
+
+      <h4 style="color: #27ae60">
+        <i class="fas fa-leaf"></i> Future (3 Months +)
+      </h4>
+      <div class="scroll-row" id="row-future"></div>
+
+      <div class="filter-section">
+        <h3>
+          <i class="fas fa-filter"></i> Select Conference (Categories) - Bold:
+          Scheduled Conferences
+        </h3>
+        <div id="filter-container"></div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

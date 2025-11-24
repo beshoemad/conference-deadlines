@@ -1,0 +1,219 @@
+:root {
+    --bg-color: #f4f6f9;
+    --primary: #34495e;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--bg-color);
+    color: #333;
+    padding: 20px;
+}
+
+/* Badge Style */
+.sub-badge {
+    background-color: #f0f0f0ff;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Card Styles */
+.conf-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    min-width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-left: 5px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conf-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.conf-desc {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.conf-info {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.countdown-box {
+    background: #f1f2f6;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 15px 0;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Category Tag Style */
+.category-tag {
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #95a5a6;
+    padding: 8px 12px; /* 패딩을 조금 늘림 */
+    border-radius: 6px;
+    align-self: flex-start;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column; /* 위: 이름, 아래: 별표 */
+    width: fit-content;
+}
+
+/* Font Styles for Filter Header */
+.cat-code {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #2c3e50;
+    line-height: 1;
+}
+
+.cat-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #555;
+    margin-top: 4px;
+}
+
+/* Filter Section Styles */
+.filter-section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eee;
+}
+
+.filter-header span {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #666;
+}
+
+.checkbox-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+/* Scroll Layout */
+.scroll-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 5px;
+    min-height: 260px;
+}
+
+.scroll-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-row::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 4px;
+}
+
+/* Status Colors */
+.border-red { border-left-color: #e74c3c !important; }
+.border-yellow { border-left-color: #f1c40f !important; }
+.border-green { border-left-color: #2ecc71 !important; }
+
+/* (기존 CSS 내용은 유지) ... */
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-item input {
+    margin-right: 8px;
+}
+
+/* 미래 데드라인이 있는 학회: 진하고 검은색 */
+.label-active {
+    font-weight: 700; /* Bold */
+    color: #000;      /* Black */
+}
+
+/* 미래 데드라인이 없는 학회: 얇고 짙은 회색 */
+.label-inactive {
+    font-weight: 300; /* Thin */
+    color: #7f8c8d;   /* Dark Gray */
+    text-decoration: none; /* 취소선 없음 (원하면 line-through) */
+}
+
+/* [추가] 별표 스타일 (노란색) */
+.star-rating {
+    color: #f1c40f; /* 밝은 노란색 */
+    font-size: 1.0rem;
+    margin-top: 4px;
+    letter-spacing: 2px; /* 별 사이 간격 */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2); /* 가독성을 위해 약간의 그림자 */
+}
+
+/* [추가] 랭크 범례 섹션 */
+.legend-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.legend-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.legend-item {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
